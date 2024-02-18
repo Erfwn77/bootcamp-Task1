@@ -1,0 +1,128 @@
+@import url("./fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: rgba(33, 159, 149, 1);
+  --color-secondary-light: rgba(175, 206, 221, 1);
+  --color-secondary-dark: rgba(35, 72, 148, 1);
+  --color-black-900: rgba(30, 30, 30, 1);
+  --color-black-100: rgba(105, 105, 105, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body,
+* {
+  font-family: Vazirmatn;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+@media screen and (min-width: 935px) {
+  h1 {
+    font-size: 2.2rem;
+    padding: 3rem 5rem 6rem;
+    text-align: start;
+  }
+}
+/* Requests Section */
+.requests {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  row-gap: 2rem;
+  column-gap: 3.5rem;
+}
+.request {
+  padding: 1.7rem;
+}
+/* Request title */
+.req__title {
+  display: flex;
+  justify-content: space-between;
+}
+.req__title > div > span {
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary-dark);
+  padding: 0.6rem 1.5rem;
+  font-size: 1.8rem;
+  border-radius: var(--border-radius-md);
+  font-weight: 900;
+}
+.req__title h3 {
+  color: var(--color-secondary-dark);
+  font-size: 1.6rem;
+  display: inline;
+  padding-right: 1rem;
+}
+.req__title > span,
+.req__content > span {
+  color: var(--color-black-100);
+  font-size: 1.2rem;
+  align-self: flex-start;
+  
+}
+/* Request Content */
+.req__body {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+.btn {
+  align-self: flex-end;
+  padding: 2rem 1.5rem;
+  font-size: 1.6rem;
+  border-radius: var(--border-radius-lg);
+  color: var(--color-white);
+  outline: 0;
+  border: 0;
+  background-color: var(--color-primary);
+}
+.req__profile {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-end;
+  margin-top: 1.4rem;
+}
+.req__profile span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(/assets/images/warren-wong-VVEwJJRRHgk\ 1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius-lg);
+  align-self: flex-end;
+}
+.req__profile p {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  align-self: center;
+}
